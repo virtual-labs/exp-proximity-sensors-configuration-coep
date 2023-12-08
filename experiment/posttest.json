@@ -2,38 +2,68 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+	
+      "question": "_______ detects metals but along with it can also detect resins, liquids.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Inductive proximity",
+        "b": "Magnetic Proximity",
+        "c": "Capacitive Proximity",
+        "d": "Parallel Proximit"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+    {
+      "question": "How are proximity sensors affected?",
+      "answers": {
+        "a": "Ambient Temperature",
+        "b": "Objects surrounded",
+        "c": "By Other Sensors",
+        "d": "All mentioned above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "What transistor is used for positive side switching?",
+      "answers": {
+        "a": "PNP",
+        "b": "NPN",
+        "c": "UJT",
+        "d": "FET"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+	
+	{
+      "question": "Proximity sensors detect object using __________?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Light",
+        "b": "Electromagnetic(EM) field",
+        "c": "Sound",
+        "d": "All mentioned above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "The monitoring of machines, gears and objects are achieved by which sensor?",
+      "answers": {
+        "a": "Humidity sensor",
+        "b": "Touch sensor",
+        "c": "Pressure sensor",
+        "d": "Proximity sensor"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
+	
+ 
   ]
 }
+
