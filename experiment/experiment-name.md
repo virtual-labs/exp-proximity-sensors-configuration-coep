@@ -1,1 +1,1 @@
-## Experiment name
+## Configuration of proximity sensors and its applications.

@@ -2,38 +2,67 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What type of proximity sensors are preferred for Liquid level detection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Capacitive",
+        "b": "Inductive",
+        "c": "Magnetic",
+        "d": "Photoelectric"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
+
+	
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What kind of objects detected by Capacitive sensors?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Metallic",
+        "b": "Non-metallic",
+        "c": "Liquid",
+        "d": "All mentioned above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "Capacitive type proximity sensors maximum sensing range is _____?",
+      "answers": {
+        "a": "10 mm",
+        "b": "25 mm",
+        "c": "100 mm",
+        "d": "120 mm"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+  
+	
+	{
+      "question": "What is the condition to detect target in dielectric capacitive sensor?",
+      "answers": {
+        "a": "Dielectric constant = Air",
+        "b": "Dielectric constant",
+        "c": "Dielectric constant > Air",
+        "d": "Dielectric constant ≥ Air"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Which protocol is used by proximity sensor?",
+      "answers": {
+        "a": "I2C",
+        "b": "SPI",
+        "c": "UART/USART",
+        "d": "CAN"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
+	
+ 
   ]
 }
