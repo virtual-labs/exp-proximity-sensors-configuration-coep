@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+<title> Proximity Switches  </title>
+<meta charset="ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" > -->
+    <link rel="stylesheet" href=" https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+   	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/header1.css">
+	<link rel="stylesheet" href="css/mainPage.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/psensor.css">
+<!-- 		<link rel="stylesheet" href="css/analysis.css"> -->
+</head>
+
+<style>
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('font/digital-7.ttf');
+}
+
+
+.blink {
+            animation: blinker 1.5s linear infinite;
+            color: red;
+            font-family: sans-serif;
+			font-weight: bold;
+			background: #ebe2d4;
+			padding: 7px 20px;
+			border-radius: 15px;
+        }
+        @keyframes blinker {
+            70% {
+                opacity: 0.2;
+            }
+        }
+</style>
+<body bgproperties="fixed">
+
+<header>
+		<img class="Coeplogo" src='images/COEPlogo.png' />
+		<img class="VlabLogo" src='images/vlablogo.jpg' />
+		<span id="colgName">COEP Technological University</span>		
+		
+	</header>
+	
+<div  class="row container-fluid" id="main-div1" style="margin-top:10px;" hidden>
+	<div class="col-lg-2"  >
+		
+	   	</div>
+	   <div class="col-lg-2"  id="configType" >
+		<label class="selectConf2" >Configuration Type</label>		
+	   	</div>
+	   <div class="col-lg-5" id="configSelection" >
+	  <select  class="form-control selectConf" id="configConnection" " style="height:auto;">
+	   <option value="000">--- Select Configuration --- </option>
+	   <option id="PNPConnection" value="1" name="PNP">PNP</option>
+	   <option id="NPNConnection" value="2" name="NPN">NPN</option>
+	  </select>	         
+	   </div>
+	<div class="col-sm-2">
+	<button type="button" class="btn btn-danger" id="procedure" data-toggle="modal" data-target="#readProcedureModal">Read Procedure</button>
+	</div>
+</div>
+
+<div id="readProcedureModal" class="modal fade" role="dialog">
+  <div class="modal-dialog  modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"><center>PROCEDURE</center></h4>
+      </div>
+      <div class="modal-body">
+    
+
+<center id="modelTitle"> Basic Knowledge </center>
+ <ol>
+<li> Answer all the questions and click on "Submit Test" button.</li>
+<li> Click on "Next" button.</li>
+</ol>
+
+<center id="modelTitle"> Configuration</center>
+ <ol>
+<li> Select Configuration Type, Material type, Sensor type, and Voltage.</li>
+<li> Click on "CHECK CONFIGURATION" button.</li>
+</ol>
+
+<center id="modelTitle"> Mimic</center>
+<img src="images/ProxyCircuit.png" class="img-responsive" alt="Cinque Terre">
+<ol>
+<li>Click on "Terminals" (red circles) and connect to positive voltage, negative voltage, and ground. Connect all terminals one by one as shown in above circuit diagram of NPN type configuration or PNP type configuration.</li>
+<li>Click on "Check Connection Status" button.</li>
+<li>Click on "NEXT LEVEL" button.</li>
+</ol>
+
+<center id="modelTitle">Animation</center>
+<ol><li>Select Material type and sensor type for animation of proximity sensor.</li>
+<li>Click on "SUBMIT" button.</li>
+<li>Follow Step6 and Step7 for sensing all material types or targets by Proximity Sensor.</li>
+<li>After checking all materials or targets, click on "SELECT ANOTHER CONFIGURATION TYPE".</li>
+<li>After all steps, click on "FINISH" button.</li>
+</ol> 
+<li><B> NOTE : Follow same steps of "Configuration", "Mimic" and "Animation" for  another type of configuration.</b></li>
+
+<center id="modelTitle">Rusult</center>
+<ol><li>Click on "RESULT" button.</li>
+<li>Click on "FINISH" button.</li>
+</ol>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div  class="row container-fluid" id="mainDiv">
+
+<div class="col-lg-7" id="canvas">
+	             <div class="panel panel-primary">
+	      			<div class="panel-heading " id="panelHeading2"><center id="centerText1"> DIAGRAM</center>
+	      			</div>
+<!-- 	      			<label  id="counter"></label> -->
+	      			<div class="panel-body" id="canvas-div" >
+	      			<img src="images/p1.png" class="img-fluid " width="1000" height="800">
+	      			</div>
+
+	   			</div>
+	       </div>
+	<div class="col-lg-5" id="main-div">
+				<div class="panel panel-primary">
+	      			<div class="panel-heading " id="panelHeading1"><center id="centerText2">BASIC KNOWLEDGE</center>
+	      			</div>
+	     			<div class="panel-body" id="main-div-conf">
+
+	     			</div>
+	     			<div class="row" >
+	     			<div class="col-sm-12" id="sub-main-div1" >
+	     			</div>
+	     			<div class="row" id="sub-main-div2">
+	     			
+	     			</div>
+	     		</div>
+	   	</div>
+	        
+	  </div>      
+	</div>
+	 <!-- Modal -->
+				<div class="modal fade" id="modelMsg111" role="dialog">
+				 <div class="modal-dialog modal-md">
+				    <div class="modal-content">
+				     <div class="modal-header">
+				
+				       <h4 class="modal-title">Message box</h4>
+				     </div>
+				     <div class="modal-body" id="modelBody">
+				
+				     </div>
+				     <div class="modal-footer">
+				       <button type="button" class="btn btn-danger" id = "ok" data-dismiss="modal" >Okay</button>
+				     </div>
+				   </div>
+				 </div>
+				</div>
+				</div>
+				</div>
+				 </div>
+	<footer>
+Copyrights &copy; COEP - Virtual Lab
+</footer>
 </body>
+
+<!-- https://code.jquery.com/jquery-3.5.1.js -->
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<script type="text/javascript" src="lib/raphael.js"></script>
+<script type="text/javascript" src="lib/raphael.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="src/questionJson.js"></script>
+<script type="text/javascript" src="src/questions.js"></script>
+<script type="text/javascript" src="src/mainPage.js"></script>
+<script type="text/javascript" src="src/mimic.js"></script>
+<script type="text/javascript" src="src/animation.js"></script>
+<script type="text/javascript" src="src/table.js"></script>
+
+
 </html>
