@@ -10,7 +10,7 @@ Proximity sensors or switches are pilot devices that detect the presence of an o
 
 An inductive proximity sensor is a sensing device that is actuated by a metal object.
 
-![1](images/figure1.jpg)
+![1](images/figure1.png)
 
 When energy is supplied, the oscillator operates to generate a high-frequency field. At this moment, there must not be any conductive material in the high-frequency field. When a metal object enters the high-frequency field, eddy currents are induced in the surface of the target. This results in a loss of energy in the oscillator circuit; consequently, this causes a smaller amplitude of oscillation. The detector circuit recognizes a specific change in amplitude and generates a signal that will turn the solid-state output ON or OFF. When the metal object leaves the sensing area, the oscillator regenerates, allowing the sensor to return to its normal state.
 
