@@ -3,13 +3,19 @@ MaterialMasterJson={};
 ArrayJson2=[];
 MaterialMasterJson2={};
 var configType="";
-	var	sensorSelect;
-	var configConnectionSelect ;
-	var voltageSelect ;
-	var materialSelect ;
-	var config12;
-	var connectionCount=0;
-	var connetionStatusFlag=0;
+var	sensorSelect;
+var configConnectionSelect ;
+var voltageSelect ;
+var materialSelect ;
+var config12;
+var connectionCount=0;
+var connetionStatusFlag=0;
+	
+var cntSubmitConfig=0;
+var cntCalMain1ArrayJson=[];
+var cntCalMain1MasterJson={};
+
+
 function mainPage(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
@@ -129,8 +135,10 @@ function mainPage(){
 
       var flag = false;
   
-     $("#submitconfig").click(function() {
+ $("#submitconfig").click(function(){
+		
 	if(flag == true){
+		cntSubmitConfig++;
 //		console.log("click event");
 	materialSelect = $("#material").val();
 	sensorSelect = $("#sensorType").val();
@@ -178,18 +186,17 @@ $("#connectionStatus").click(function(){
 	$("#connectionStatus").prop('hidden',true);
 	$("#nextLevel").prop('hidden',false);
 	//$("#submitAnimationConfig").prop('disabled',false);
-})
+});
 
 	//submitconfig
-$("#nextLevel").click(function(){
-	
+$("#nextLevel").click(function(){	
 	$("#centerText1").html('PROXIMITY SENSOR WORKING');
 	 var htm = '<img src="images/inductiveProxyWorking.gif" class="img-fluid" >'
       $("#canvas-div").html(htm);
 	
-		sensorSelect = $("#sensorType").val();
+	sensorSelect = $("#sensorType").val();
 	configConnectionSelect = $("#configConnection").val();
-	 voltageSelect = $("#voltage").val();
+	voltageSelect = $("#voltage").val();
 	materialSelect = $("#material").val();		
 //		console.log("materialSelect"+materialSelect);
 //		console.log("sensorSelect"+sensorSelect);
@@ -200,8 +207,6 @@ $("#nextLevel").click(function(){
 		$('#material  option[value="0"]').prop("selected", true);
 		$('#sensorType  option[value="0"]').prop("selected", true);
 	
-	
-	
 		//animation(materialSelect,sensorSelect,configConnectionSelect,voltageSelect);
 		$("#buttonDiv").html('<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="submitAnimationConfig" data-toggle="modal" data-target="#selectCheck" disabled><b> SUBMIT </b></button>');
 
@@ -209,8 +214,8 @@ $("#nextLevel").click(function(){
 
 
 $("#submitAnimationConfig ").click(function(){
-//	$("#submitAnimationConfig").prop('disabled',flase);
-		   
+	cntSubmitConfig++;
+//	$("#submitAnimationConfig").prop('disabled',flase);		   
 	sensorSelect = $("#sensorType").val();
 	configConnectionSelect = $("#configConnection").val();
 	voltageSelect = $("#voltage").val();
@@ -244,8 +249,6 @@ $("#submitAnimationConfig ").click(function(){
 //	$("#configConnection").children(":selected").css("background-color","#f7dddd");
 //	$("#configConnection option[name="+config12+"]").attr("disabled",true);
 //	$('#material').children(":selected").css("background-color","#f7dddd");
-		
-	
 });
 
 	});
@@ -260,7 +263,7 @@ $("#material").change(function(){
 	$("#sensorType").val("0");
 })	
 	
-$("#sensorType").change(function() {
+$("#sensorType").change(function(){
 //		console.log("Change SensorType");
 		sensorSelect = $("#sensorType").val();
 		materialSelect = $("#material").val();
@@ -285,7 +288,7 @@ $("#sensorType").change(function() {
 	});
 	
 $("#configConnection").change(function() {
-		
+		$("#configConnection").prop('disabled',true);
 		$("#sensorType,#voltage,#material,#submitconfig").prop('disabled',false);
 });
 	             
@@ -293,25 +296,34 @@ $("#configConnection").change(function() {
 }
 
 
+function addToCntCalMain1MasterJson(){
+ 			var cntCalMain1tempJson={};
+				cntCalMain1tempJson.cntSubmitConfig= cntSubmitConfig;
+//				cntCalMain1tempJson.cntCalculateMainPage=cntCalculateMainPage;
+//			let lastEntry1 = cntCalMain1ArrayJson[cntCalMain1ArrayJson.length - 1] || {cntCalculateMainPage: 0 };
+//			cntCalMain1tempJson.cntCalculateMainPage = lastEntry1.cntCalculateMainPage + cntCalculateMainPage; // Add the new count			  
+//            cntCalMain1tempJson.cntSubmitConfig = lastEntry1.cntSubmitConfig + cntSubmitConfig; // Add the new count
+   			cntCalMain1ArrayJson.push(cntCalMain1tempJson);
+			counterMasterJson.cntCalMain1MasterJson = cntCalMain1ArrayJson;
+}
+
+
 function addToMasterJSON(){
 	
 	sensorSelect1 =$("#sensorType").children(":selected").attr("name");
-	
 	materialSelect1 =$("#material").children(":selected").attr("name");
-	 $("#material option[name="+materialSelect1+"]").attr("disabled",true);
-voltageSelect1 =$("#voltage").children(":selected").attr("value");
-
- tempJson={};
-						tempJson.sensorSelect = sensorSelect1;
-						tempJson.materialSelect = materialSelect1;
-						tempJson.voltage = voltageSelect1;
-						tempJson.configType = config12;
+	$("#material option[name="+materialSelect1+"]").attr("disabled",true);
+	voltageSelect1 =$("#voltage").children(":selected").attr("value");
+	tempJson={};
+			tempJson.sensorSelect = sensorSelect1;
+			tempJson.materialSelect = materialSelect1;
+			tempJson.voltage = voltageSelect1;
+			tempJson.configType = config12;
 						
-						
-						ArrayJson.push(tempJson);
-						MaterialMasterJson.demo = ArrayJson;
-//						console.log(MaterialMasterJson);
-						tableCreate(MaterialMasterJson);
+			ArrayJson.push(tempJson);
+			MaterialMasterJson.demo = ArrayJson;
+//			console.log(MaterialMasterJson);
+			tableCreate(MaterialMasterJson);
 
 }
   

@@ -1,3 +1,5 @@
+
+
 function tableCreate(masterJson)		
 {
 //			console.log(masterJson);
@@ -70,7 +72,7 @@ function tableCreate(masterJson)
 							
 //							 $("#modelBody").html('<img src="images/cong.gif" class="img-fluid" > ');
 							 $("#checkConfg").prop('disabled',true);
- 							tableMainDiv +='<button type="button" class="btn btn-danger" id="finish" data-toggle="modal" data-target="#modelMsg111" style="width:100%;margin-top: -6px;margin-bottom: 30px;"  >FINISH</button>'					
+ 							tableMainDiv +='<button type="button" class="btn btn-danger" id="finish"  style="width:100%;margin-top: -6px;margin-bottom: 30px;"  >RESULT</button>'					
 							 } 
 						 
 						 
@@ -81,14 +83,14 @@ function tableCreate(masterJson)
 				$("#sub-main-div1").html(tableMainDiv);
 				
 	$("#finish").click(function(){
-		alert("Your experiment has been successfully completed");	
+		resultAnalysis(counterMasterJson);
 //		$("#MODELMSG111").HTML('<IMG SRC="IMAGES/CONG.GIF" CLASS="IMG-FLUID" >');
 		$("#finish").prop('disabled',true);
-//		console.log("Finish EXP.................");
+		
 	});
 					
 
-				$("#continue").click(function() {
+				$("#continue").click(function(){
 					
 					connectionCount++;
 					if(connectionCount==1)

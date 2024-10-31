@@ -1,8 +1,13 @@
-
-			var flag = false;
-			var myRadio = null;
-			data = {};
-			dataQues = {};
+		var counterArrayJson=[];
+		var counterMasterJson ={};
+		var totalQues=5;
+		var correctAnswer=0;			
+		var bKnowledgeTime="";
+		var answerTotCount;
+		var flag = false;
+		var myRadio = null;
+		data = {};
+		dataQues = {};
 
 			var questions = '';
 			questions += ''				
@@ -41,10 +46,7 @@
 
 			questions += '<div class="buttonDiv">'
 				+ '<button  class="btn btn-danger" data-toggle="modal" data-target="#myModal" id="testSubmit">Submit Test</button>'
-		+ '<button  class="btn btn-danger" id="nextLevelConfig" hidden>Next Level</button>'
-				
-				
-
+				+ '<button  class="btn btn-danger" id="nextLevelConfig" hidden>Next Level</button>'
 				+ ' <!-- Modal -->'
 				+ '<div class="modal fade" id="myModal" role="dialog">'
 				+ ' <div class="modal-dialog modal-md">'
@@ -72,7 +74,7 @@
 
 			$("#main-div-conf").html(questions);
 
-			$('#testSubmit').on('click', function() {		
+			$('#testSubmit').on('click', function(){		
 				$("body").css("padding","0px 0px 0px 0px");
 
 					var arr = [];
@@ -113,6 +115,7 @@
 						}
 						dataQues.corrAns = ansCount;
 						 data.corrAns = dataQues;
+						 answerTotCount = ansCount;
 //						 console.log(data);
 						 
 						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully .<br> Number of Correct Answers  : " + ansCount+"</b>");
@@ -123,14 +126,13 @@
 		   			
 					}
 					
-					$('#nextLevelConfig').on('click', function() {	
-						 
-	      if(ansCount != 0){
-		
-//				  $("#main-div-conf").html('<img src="images/proximitySensor.png"  width="100%" height="60%" class="img-fluid" >');
+			$('#nextLevelConfig').on('click', function(){							 
+	     		if(ansCount != 0){
+				$('#configConnection').prop('disabled',false);	
+//				$("#main-div-conf").html('<img src="images/proximitySensor.png"  width="100%" height="60%" class="img-fluid" >');
 				$("#main-div-conf").html("");
-	             $("#canvas-div").html("");
-	             $('#main-div1').prop('hidden',false);
+	            $("#canvas-div").html("");
+	            $('#main-div1').prop('hidden',false);
 	             
 				mainPage();
 //				  mimic();
