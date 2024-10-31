@@ -1,9 +1,12 @@
 
-
+var cntConnectionArrayJson=[];
+var cntConnectionMasterJson={};
+var cntConnection1=0;
+var cntConnection2=0;
 function mimic(materialSelect,sensorSelect,configConnectionSelect,voltageSelect){
 //	$("#main-div-conf").html('');	
     $("#canvas-div").html('');	
-    $("#centerText1").html('MIMIC');
+    $("#centerText1").html('CONNECTION DIAGRAM');
     $("#centerText2").html('CONFIGURATION');
 
 $('#canvas-div').removeAttr('width');
@@ -136,7 +139,9 @@ circle1_bottom=paper.circle(x1+300, y1+350, 5).attr({'fill':' #FF0000'});
 function pnp_working(){
 	 //statusflag=1;
 	workcounter=workcounter+1;
+	
 	circle_top.click(function(){
+		cntConnection1++;
 		circle_top=1;
 		con1=1;
 //		console.log("con1 = "+con1);
@@ -152,6 +157,7 @@ function pnp_working(){
 	});
 			
 	circle1_bottom.click(function(){
+		cntConnection1++;
 		circle1_top=2;
 		circle1_bottom=1;
 		con3=1;
@@ -174,6 +180,7 @@ function pnp_working(){
 	});
 			
 	circle1_middle.click(function(){
+		cntConnection1++;
 		circle1_middle=1;
 		con2=1;
 //		console.log("con2 = "+con2);
@@ -194,6 +201,7 @@ function pnp_working(){
 	});
 			
 	plus_circle.click(function(){
+		cntConnection1++;
 			//plus connection	
 		var plus_connection_arr=[];
 		if(circle_top==1){
@@ -265,6 +273,7 @@ function pnp_working(){
 	});
 	
 	ground_circle.click(function(){
+		cntConnection1++;
 				var load_connection_arr=[];
 				if(con2==1){
 					load_connection_arr[0]=paper.path("M "+(x1+300)+" "+(y1+200)+ "l 0 0").attr({'stroke-width':3});			
@@ -310,6 +319,7 @@ function pnp_working(){
 	});
 			
 	minus_circle.click(function(){
+		cntConnection1++;
 				var minus_connection_arr=[];
 				if(circle1_bottom==1){
 					//minus connection
@@ -405,6 +415,7 @@ function npn_working(){
 		status=status+1;
 		workcounter=workcounter+1;
 	circle_top.click(function(){
+		cntConnection2++;
 			circle_top=1;
 			con1=1;
 //			console.log("con1 = "+con1);
@@ -424,6 +435,7 @@ function npn_working(){
 	});
 		
 	circle1_bottom.click(function(){
+		cntConnection2++;
 			circle1_top=2;
 			circle1_bottom=1;
 			con3=1;
@@ -450,6 +462,7 @@ function npn_working(){
 	});
 		
 	circle1_middle.click(function(){
+		cntConnection2++;
 			circle1_middle=1;
 			con2=1;
 //			console.log("con2 = "+con2);
@@ -473,6 +486,7 @@ function npn_working(){
 	});
 		
 	plus_circle.click(function(){
+		cntConnection2++;
 		//plus connection	
 			var plus_connection_arr=[];
 			if(circle_top==1){
@@ -526,6 +540,7 @@ function npn_working(){
 		
 		
 	load_circle.click(function(){
+		cntConnection2++;
 			var load_connection_arr=[];
 			if(con2==1){
 				load_connection_arr[0]=paper.path("M "+(x1+300)+" "+(y1+200)+ "l 0 0").attr({'stroke-width':3});			
@@ -572,7 +587,8 @@ function npn_working(){
 //		}
 	});
 		
-	minus_circle.click(function(){			
+	minus_circle.click(function(){	
+		cntConnection2++;		
 			var minus_connection_arr=[];
 			if(circle1_bottom==1){
 				//minus connection
@@ -619,6 +635,7 @@ function npn_working(){
 	});
 		
 	ground_circle.click(function(){
+		cntConnection2++;
 			
 			ground_circle=1;
 			circle1_bottom=2;
@@ -644,7 +661,7 @@ function npn_working(){
 	});
 		
 	small_c1.click(function(){
-		
+		cntConnection2++;
 //		console.log("Hello small_c1");
 		var ground_connection_arr=[];
 		if(circle1_bottom==2){
@@ -744,3 +761,16 @@ statusflag=1;
 }
 
 
+function addToCntCalMain1MasterJson(){
+ 			var coneectionTempJson={};
+				coneectionTempJson.cntConnection1= cntConnection1;
+				coneectionTempJson.cntConnection2=cntConnection2;
+//			let lastEntry1 = cntCalMain1ArrayJson[cntCalMain1ArrayJson.length - 1] || {cntCalculateMainPage: 0 };
+//			cntCalMain1tempJson.cntCalculateMainPage = lastEntry1.cntCalculateMainPage + cntCalculateMainPage; // Add the new count			  
+//            cntCalMain1tempJson.cntSubmitConfig = lastEntry1.cntSubmitConfig + cntSubmitConfig; // Add the new count
+   			cntConnectionArrayJson.push(coneectionTempJson);
+			counterMasterJson.cntConnectionMasterJson = cntConnectionArrayJson;
+		
+						
+
+}
