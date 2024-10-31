@@ -1,10 +1,14 @@
+var cntConnectionArrayJson=[];
+var cntConnectionMasterJson={};
+var animConfig=0;
+
 function animation(materialSelect,sensorSelect,configConnectionSelect,voltageSelect)
 {
 	$("#canvas-div").html('');	
     $("#centerText1").html('ANIMATION');
     $("#centerText2").html('CONFIGURATION');
     $("#submitAnimationConfig").html("SUBMIT");	
-    $("#centerText2").html("INPUT");
+    $("#centerText2").html("CONFIGURATION");
 	
 $('#canvas-div').removeAttr('width');
 	$('#canvas-div').removeAttr('height');
@@ -66,18 +70,25 @@ var b,p,g,c,m,w,pot;
 //	});
 
 if(target==1){
+	animConfig++;
 	b=paper.image("images/btl.png",x+90,y-65, 600, 600);
 }else if(target==2){	
+	animConfig++;
 	p=paper.image("images/paperbox.png",x+315,y+70, 300, 310);
-}else if(target==3){	
+}else if(target==3){
+	animConfig++;	
 	g= paper.image("images/glass.png",x+205,y+50, 360, 350);
-}else if(target==4){	
+}else if(target==4){
+	animConfig++;	
 	c=paper.image("images/cloth.png",x+285,y+50, 330, 330);
 }else if(target==5){
+	animConfig++;
 	m=paper.image("images/metal_img.png",x+185,y+30, 400, 400);
 }else if(target==6){
+	animConfig++;
 	w=paper.image("images/wood.png",x+305,y+100, 200, 300);
 }else if(target==7){
+	animConfig++;
 	pot=paper.image("images/caramicPreview.png",x+270,y+50, 300, 350);
 }else{
 //	setTimeout(function(){ 
