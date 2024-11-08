@@ -1,0 +1,69 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+	
+      "question": "_______ detects metals but along with it can also detect resins, liquids.",
+      "answers": {
+        "a": "Inductive proximity",
+        "b": "Magnetic Proximity",
+        "c": "Capacitive Proximity",
+        "d": "Parallel Proximit"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	
+    {
+      "question": "How are proximity sensors affected?",
+      "answers": {
+        "a": "Ambient Temperature",
+        "b": "Objects surrounded",
+        "c": "By Other Sensors",
+        "d": "All mentioned above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "What transistor is used for positive side switching?",
+      "answers": {
+        "a": "PNP",
+        "b": "NPN",
+        "c": "UJT",
+        "d": "FET"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Proximity sensors detect object using __________?",
+      "answers": {
+        "a": "Light",
+        "b": "Electromagnetic(EM) field",
+        "c": "Sound",
+        "d": "All mentioned above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "The monitoring of machines, gears and objects are achieved by which sensor?",
+      "answers": {
+        "a": "Humidity sensor",
+        "b": "Touch sensor",
+        "c": "Pressure sensor",
+        "d": "Proximity sensor"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+	
+ 
+  ]
+}
+
