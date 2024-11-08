@@ -32,11 +32,11 @@ function mainPage(){
 	}
      
       
-      var selection  ='<div class="row"><div class="col-sm-6" id="materialType" >'
+      var selection  ='<div class="row"><div class="col-sm-6" id="materialType"  hidden>'
                   +'<label class="labelstyle"> Material type: </label>'   
                   +'</div>'
                   +'<div class="col-sm-6">'
-	   +'<select  class="form-control selectConf" id="material"  style="height:auto;" disabled>'
+	   +'<select  class="form-control selectConf" id="material"  style="height:auto;" hidden>'      
 	   +'<option value="0">--- Select the Material --- </option>'
 	   	+'<option value=" 1 " name="Plastic" >Plastic</option>'
 	   +'<option value=" 2 " name="Box" >Box</option>'
@@ -83,11 +83,11 @@ function mainPage(){
 	    
 	   +'<div class="row" >'
 	    +'<div class="col-sm-6">'
-	   +'<label class="labelstyle"> Voltage (V):  </label>'
+	   +'<label class="labelstyle"> Voltage Rate (V):  </label>'
 	   +'</div>'
 	   +'<div class="col-sm-6" >'
 	   +'<select  class="form-control selectConf" id="voltage" style="height:auto;" disabled>'
-	   +'<option value="000">--- Select Configuration --- </option>'
+	   +'<option value="000">--- Select Voltage Rate --- </option>'
 	   +'<option value="10" >10</option>'
 	   +'<option value="15">15</option>'
 	   +'<option value="20">20</option>'
@@ -145,11 +145,12 @@ function mainPage(){
 	configType=$('#configConnection').attr('name');
 	configConnectionSelect = $("#configConnection").val();
 	voltageSelect= $("#voltage").val();
-	   if(materialSelect==0){
-		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg").html("<b class='boldTextRed'>Select material </b>");
-
-	}else if(sensorSelect==0){
+//	   if(materialSelect==0){
+//		$("#errorPanel").prop("hidden",false);
+//		$("#modelMsg").html("<b class='boldTextRed'>Select material </b>");
+//
+//	}else 
+if(sensorSelect==0){
 		$("#errorPanel").prop("hidden",false);
 		$("#modelMsg").html("<b class='boldTextRed'>Select Sensor Type </b>");
 
@@ -177,7 +178,7 @@ function mainPage(){
        mimic(materialSelect,sensorSelect,configConnectionSelect,voltageSelect);
 //     	$("#buttonDiv").html('<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="connectionStatus" data-toggle="modal" data-target="#selectCheck" disabled><b> CHECK CONNECTION STATUS </b></button>');
 //  
-	$("#buttonDiv").html('<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="nextLevel" data-toggle="modal" data-target="#selectCheck" hidden ><b> NEXT LEVEL </b></button>');
+	$("#buttonDiv").html('<button type="button" style="padding: 10px; "  class="btn btn-danger btnStyle" id="nextLevel" data-toggle="modal" data-target="#selectCheck" hidden ><b>GO TO APPLICATION LEVEL </b></button>');
 //button for table
 	
 	}	
@@ -190,6 +191,9 @@ $("#connectionStatus").click(function(){
 
 	//submitconfig
 $("#nextLevel").click(function(){	
+	$("#material").prop('hidden',false);
+	$("#materialType").prop('hidden',false);
+	      
 	$("#centerText1").html('PROXIMITY SENSOR WORKING');
 	 var htm = '<img src="images/inductiveProxyWorking.gif" class="img-fluid" >'
       $("#canvas-div").html(htm);
