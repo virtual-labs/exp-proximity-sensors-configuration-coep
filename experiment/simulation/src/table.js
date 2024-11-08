@@ -5,19 +5,18 @@ function tableCreate(masterJson)
 //			console.log(masterJson);
 			var tableMainDiv=""
 					
-					+ '<div class="well well-lg">'
+					+ '<div class="well well-lg" style="overflow:auto;">'
 					+'<center class="blink"> TAKE ALL MATERIAL TYPE </center>'
 					+'<center><b>Configuration Type : '+masterJson.demo[0].configType+'</b></center>'
-				    +'<table class="table table-bordered table-responsive" >'
+				    +'<table class="table table-bordered " >'
 					+ ' <thead>'
 
-					+ '  <tr>'
+					+ '<tr>'
 					+'<th scope="col-sm-2"><center>Sr. No.</center></th>'
 					+ '  <th scope="col-sm-2"><center>CONFIGURATION TYPE</center></th>'
 					+ '  <th scope="col-sm-2"><center>SUPPLY VOLTAGE</center></th>'
 					+ '   <th scope="col-sm-3"><center >SENSOR TYPE </center></th>'
-					+ '  <th scope="col-sm-3"><center>MATERIAL TYPE</center></th>'
-					
+					+ '  <th scope="col-sm-3"><center>MATERIAL TYPE</center></th>'				
 					+ '   </tr>'
 					+ '  </thead>'
 					+ '   <tbody>'
@@ -65,7 +64,7 @@ function tableCreate(masterJson)
 //						 console.log('appCount'+connectionCount);
 						 if(connectionCount==0){
 							 $("#modelBody").html("SELECT ANOTHER APPLICATION  ");
-							 tableMainDiv+='<button type="button" class="btn btn-danger" id="continue" style="width:100%;margin-top: -6px;margin-bottom: 30px;"  >SELECT ANOTHER CONFIGURATION TYPE   </button>'	 
+							 tableMainDiv+='<button type="button" class="btn btn-danger" id="continue" style="width:100%;margin-top: -6px;margin-bottom: 30px;"  >SELECT ANOTHER CONNECTION TYPE</button>'	 
 						 }
 						 else
 							 {

@@ -127,7 +127,7 @@
 					}
 					
 			$('#nextLevelConfig').on('click', function(){							 
-	     		if(ansCount != 0){
+	     		
 				$('#configConnection').prop('disabled',false);	
 //				$("#main-div-conf").html('<img src="images/proximitySensor.png"  width="100%" height="60%" class="img-fluid" >');
 				$("#main-div-conf").html("");
@@ -136,7 +136,7 @@
 	             
 				mainPage();
 //				  mimic();
-	} 
+	
 	});	
 					
 });

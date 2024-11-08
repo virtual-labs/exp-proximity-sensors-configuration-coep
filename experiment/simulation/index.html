@@ -39,13 +39,67 @@
                 opacity: 0.2;
             }
         }
+        
+        
+.button1 {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+ padding: 5px 10px; 
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 20px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+ 
+  .btn1 {
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top:7px;
+        float:right;
+        margin-bottom:10px;
+        padding: 7px; 
+        border:none; 
+        border-radius: 5px;
+        }       
 </style>
 <body bgproperties="fixed">
 
 <header>
 		<img class="Coeplogo" src='images/COEPlogo.png' />
 		<img class="VlabLogo" src='images/vlablogo.jpg' />
-		<span id="colgName">COEP Technological University</span>		
+		<span id="colgName">COEP Technological University,PUNE</span>		
 		
 	</header>
 
@@ -56,18 +110,20 @@
 		<div class="col-lg-2" >
 		</div>
 		<div class="col-lg-2"  id="configType" >
-			<label class="selectConf2" >Configuration Type : </label>		
+			<label class="selectConf2" >Connection Type : </label>		
 		</div>
-		<div class="col-lg-5" id="configSelection"  >
+		<div class="col-lg-5" id="configSelection"  >  
 	  		<select  class="form-control selectConf" id="configConnection" " style="height:auto;" disabled>
-	   		<option value="000">--- Select Configuration --- </option>
-	   		<option id="PNPConnection" value="1" name="PNP">PNP</option>
-	   		<option id="NPNConnection" value="2" name="NPN">NPN</option>
+	   		<option value="000">--- Select Connection --- </option>
+	   		<option id="PNPConnection" value="1" name="PNP">PNP Connection</option>
+	   		<option id="NPNConnection" value="2" name="NPN">NPN Connection</option>
 	  		</select>	         
 		</div>
 		<div class="col-sm-2">
-			<button type="button" class="btn btn-danger" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>READ PROCEDURE</b></button>
+			<button type="button" class="btn btn-danger button1 btn1" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>PROCEDURE</b></button>
 		</div>
+		
+		<button type="button" class="btn btn-danger btn1" id = "pdfDownload" hidden>Download Result </button>
 	</div>
 </div>
 
@@ -192,6 +248,10 @@ Copyrights &copy; COEP - Virtual Lab
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script src="https://code.highcharts.com/stock/highstock.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
