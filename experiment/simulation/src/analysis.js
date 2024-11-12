@@ -7,6 +7,8 @@ function resultAnalysis(counterMasterJson){
 			  	
 			$("#configType").prop('hidden',true);
 			$("#configSelection").prop('hidden',true);
+			$("#procedure").prop('hidden',true);
+			$("#simDemo").prop('hidden',true);
 //$("#selectMethod").prop('hidden',true);
 
 counterMasterJson = {
