@@ -152,20 +152,20 @@ function mainPage(){
 //	}else 
 if(sensorSelect==0){
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg").html("<b class='boldTextRed'>Select Sensor Type </b>");
+		$("#modelMsg").html("<b class='boldTextRed'>Select ssensor type </b>");
 
 	}else if(configConnectionSelect==0){
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg").html("<b class='boldTextRed'>Select Configuration</b>");
+		$("#modelMsg").html("<b class='boldTextRed'>Select configuration</b>");
 
 	}else if(voltageSelect==0){
 		$("#errorPanel").prop("hidden",false);
-		$("#modelMsg").html("<b class='boldTextRed'>Select Voltage</b>");
+		$("#modelMsg").html("<b class='boldTextRed'>Select voltage</b>");
 
 	}else{
 		$("#errorPanel").prop("hidden",true);
 
-		$("#modelMsg").html("<b class='boldTextGreen'>Configured Successfully</b>");		
+		$("#modelMsg").html("<b class='boldTextGreen'>Configured successfully</b>");		
 		$("#checkConfg").prop('hidden',true);
 		$("#material").prop('disabled',true);
 		$("#sensorType").prop('disabled',true);
@@ -235,7 +235,7 @@ $("#submitAnimationConfig ").click(function(){
 		
 		if((materialSelect == 1 ||materialSelect == 2 ||materialSelect == 3 ||materialSelect == 4 ||materialSelect == 6 ||materialSelect == 7) && sensorSelect == 1) {
 			flag = false;
-			$("#modelMsg").html("<b class='boldTextRed'>Wrong Sensor Selected</b>");
+			$("#modelMsg").html("<b class='boldTextRed'>Wrong sensor selected</b>");
 		}else{
 			flag = true;
 			$("#submitAnimationConfig").prop('disabled',true);

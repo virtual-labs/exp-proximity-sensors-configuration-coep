@@ -88,23 +88,23 @@ function NewGraph(){
 			graphData1.push(tempArr);
 
 	}
-		console.log("xdata "+xdata);
-		console.log("ydata "+ydata);
+		//console.log("xdata "+xdata);
+		//console.log("ydata "+ydata);
 		
-		console.log("graphData1 "+graphData1);
+		//console.log("graphData1 "+graphData1);
 		
-		console.log("After xdata "+xdata);
-		console.log("After ydata "+ydata);
+		//console.log("After xdata "+xdata);
+		//console.log("After ydata "+ydata);
 		Xmax = parseFloat(xdata[xdata.length - 1]);
 		Ymax = parseFloat(ydata[ydata.length - 1]);
-		console.log("Xmax "+Xmax);
-		console.log("Ymax "+Ymax);
+		//console.log("Xmax "+Xmax);
+		//console.log("Ymax "+Ymax);
 		Xmin = parseFloat(xdata[0]);
 		Ymin = parseFloat(ydata[0]);
 		
-		console.log("Xmin "+Xmin);
-		console.log("Ymin "+Ymin);
-		console.log(" graph data  " + graphData1);
+		//console.log("Xmin "+Xmin);
+		//console.log("Ymin "+Ymin);
+		//console.log(" graph data  " + graphData1);
 	
 	
 	Highcharts.chart('Graph1', {
@@ -118,7 +118,7 @@ function NewGraph(){
 		      render: function() {
 		        var chart = this;
 
-		        console.log(chart);
+		        //console.log(chart);
 
 		        if (!chart.customText1) {
 		          chart.customText1 = chart.renderer.text('Flex', 0, 10).css({

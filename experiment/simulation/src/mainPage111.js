@@ -83,8 +83,8 @@ var htm='<div class="row" >'
 		
 		 fluidType=$("#fluidType").val();
 		 floatMaterial=$("#floatMaterial").val();
-		 console.log(" fluidType "+fluidType);
-		  console.log(" floatMaterial "+floatMaterial);
+		 //console.log(" fluidType "+fluidType);
+		  //console.log(" floatMaterial "+floatMaterial);
 		   $("#validMaterialMsg").prop("hidden",false);
 		 if((fluidType==1 && floatMaterial==1) ||(fluidType==2 && floatMaterial==2) )
 		 {
@@ -111,12 +111,12 @@ var htm='<div class="row" >'
 				dataJson.pipe = pipeSize ;
 				dataJson.fluid = fluidType;
 				dataJson.material = floatMaterial;
-		   console.log("main pipeSize    "+pipeSize);
-		   console.log("main fluidType    "+fluidType);
-		   console.log("floatMaterial    "+floatMaterial);
+		   //console.log("main pipeSize    "+pipeSize);
+		   //console.log("main fluidType    "+fluidType);
+		   //console.log("floatMaterial    "+floatMaterial);
 		   data.configure = dataJson;
 
-				console.log(data);
+				//console.log(data);
 //		  $("#main-div-conf").html("");
 //		  $("#canvas-div").html("");
 //		    mimic(pipeSize,fluidType,floatMaterial);

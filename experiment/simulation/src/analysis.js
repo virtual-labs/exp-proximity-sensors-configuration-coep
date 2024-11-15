@@ -40,31 +40,31 @@ counterMasterJson = {
 var correctVal = (answerTotCount/6).toFixed(2);
 var quesPercent1 = (correctVal*100).toFixed(1);
 var quesPercent = parseFloat(quesPercent1);
-console.log(quesPercent);
+//console.log(quesPercent);
 
 //configuration
 var correctValConfigType11 = (5/5).toFixed(2);
 var configPercent1 = (correctValConfigType11*100).toFixed(1);
 var configPercent = parseFloat(configPercent1);
-console.log(configPercent);
+//console.log(configPercent);
 
 //connection PNP
 var correctValAllConnect = (14/(counterMasterJson.cntConnectionMasterJson.cntConnection1+counterMasterJson.cntConnectionMasterJson.cntConnection2)).toFixed(2);
 var correctValAllConnect1 = (correctValAllConnect*100).toFixed(1);
 var allConnectPercent = parseFloat(correctValAllConnect1);
-console.log(connect1Percent); 
+//console.log(connect1Percent); 
 
 //connection PNP
 var correctValpnpConnect = (6/counterMasterJson.cntConnectionMasterJson.cntConnection1).toFixed(2);
 var correctValpnpConnect1 = (correctValpnpConnect*100).toFixed(1);
 var connect1Percent = parseFloat(correctValpnpConnect1);
-console.log(connect1Percent);
+//console.log(connect1Percent);
 
 //connection NPN
 var correctValnpnConnect = (8/counterMasterJson.cntConnectionMasterJson.cntConnection2).toFixed(2);
 var correctValnpnConnect1 = (correctValnpnConnect*100).toFixed(1);
 var connect2Percent = parseFloat(correctValnpnConnect1);
-console.log(connect2Percent);
+//console.log(connect2Percent);
 
 
 
@@ -72,13 +72,13 @@ console.log(connect2Percent);
 var correctValCalculation = (5/5).toFixed(2);
 var CalculationPercent1 = (correctValCalculation*100).toFixed(1);
 var CalculationPercent = parseFloat(CalculationPercent1);
-console.log(CalculationPercent);
+//console.log(CalculationPercent);
 
 //Observation
 var correctValObsevation = (5/5).toFixed(2);
 var observationPercent1 = (correctValObsevation*100).toFixed(1);
 var observationPercent = parseFloat(observationPercent1);
-console.log(observationPercent);
+//console.log(observationPercent);
 
 var htm=''
 		
@@ -179,7 +179,7 @@ var htm=''
 		   +' </thead>'
 		   +'  <tbody>'
 		   +'   <tr>'
-		   +'     <td class=""><center>Basic knowledge</center></td>'
+		   +'     <td class=""><center>Basic Knowledge</center></td>'
 		     if(quesPercent<60){
 			htm+= '     <td class=""><center class="NotAttained"> Not Attained</center></td>'   
 		   }else{
@@ -326,6 +326,8 @@ var htm=''
 
 		// Create the pie chart
 		let chart = Highcharts.chart('graph-div', {
+			exporting: { enabled: false },
+			credits: { enabled: false},
 		    chart: {
 		        type: 'pie'
 		    },
