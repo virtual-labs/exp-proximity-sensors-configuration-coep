@@ -69,7 +69,7 @@ status_img.click(function(){
 			
 		}else{
 			setTimeout(function(){ 
-			alert("Connect All Terminals"); 
+			alert("Connect all terminals"); 
 			},500);
 		}
 	
@@ -252,13 +252,13 @@ function pnp_working(){
 									//var minus_connecton=paper.path("M "+(x1+300)+" "+(y1+350)+ "l 200 0 l 0 -148  ")										
 		}else{
 			setTimeout(function(){ 
-			alert("wrong connection"); 
+			alert("Wrong connection"); 
 			},1000);
 		}	
 			
 		if(circle1_bottom==1){
 			setTimeout(function(){ 
-			alert("wrong Connection"); 
+			alert("Wrong connection"); 
 			},500);
 		}
 		
@@ -298,13 +298,13 @@ function pnp_working(){
 					});
 				}else{
 						setTimeout(function(){ 
-						alert("wrong Connection"); 
+						alert("Wrong connection"); 
 						},500);
 				}
 			if(circle1_bottom==1  ){
 //				console.log("circle1_bottom = "+circle1_bottom);
 				setTimeout(function(){ 
-						alert("wrong Connection"); 
+						alert("Wrong connection"); 
 						},500);
 			}
 		
@@ -343,12 +343,12 @@ function pnp_working(){
 							
 						}else{
 							setTimeout(function(){ 
-							alert("wrong connection"); 
+							alert("Wrong connection"); 
 							},1000);
 						}
 				}else{
 					setTimeout(function(){ 
-					alert("wrong connection"); 
+					alert("Wrong connection"); 
 					},1000);
 				}
 				
@@ -443,7 +443,7 @@ function npn_working(){
 //			console.log("circle1_bottom = "+circle1_bottom);
 			if(con1==1){
 				setTimeout(function(){ 
-				alert("wrong Connection"); 
+				alert("Wrong connection"); 
 				},500);
 			}
 				connection_successful=connection_successful+1;
@@ -468,7 +468,7 @@ function npn_working(){
 //			console.log("con2 = "+con2);
 				if(con1==1){
 					setTimeout(function(){ 
-					alert("wrong Connection"); 
+					alert("Wrong connection"); 
 					},500);
 				}
 				connection_successful=connection_successful+1;
@@ -511,18 +511,18 @@ function npn_working(){
 //					console.log("conection 1 is successful"+con1);																	
 					}else{
 						setTimeout(function(){ 
-						alert("click on Terminal1 "); 
+						alert("click on terminal1 "); 
 						},1000);
 					}									
 			}else{
 				setTimeout(function(){ 
-				alert("wrong connection"); 
+				alert("Wrong connection"); 
 				},1000);
 		}	
 		
 		if(circle1_bottom==1){
 			setTimeout(function(){ 
-					alert("wrong Connection"); 
+					alert("Wrong connection"); 
 					},500);
 		}
 		
@@ -565,13 +565,13 @@ function npn_working(){
 				});
 			}else{
 					setTimeout(function(){ 
-					alert("wrong Connection"); 
+					alert("Wrong connection"); 
 					},500);
 			}
 		if(circle1_bottom==1  ){
 //			console.log("circle1_bottom = "+circle1_bottom);
 			setTimeout(function(){ 
-					alert("wrong Connection"); 
+					alert("Wrong connection"); 
 					},500);
 		}		
 	
@@ -613,12 +613,12 @@ function npn_working(){
 						
 					}else{
 						setTimeout(function(){ 
-						alert("wrong connection"); 
+						alert("Wrong connection"); 
 						},1000);
 					}
 			}else{
 				setTimeout(function(){ 
-				alert("wrong connection"); 
+				alert("Wrong connection"); 
 				},1000);
 			}
 			
@@ -643,7 +643,7 @@ function npn_working(){
 //			console.log("	circle1_bottom = "+	circle1_bottom);
 				if(con1==1){
 					setTimeout(function(){ 
-					alert("wrong Connection"); 
+					alert("Wrong connection"); 
 					},500);
 				}
 				connection_successful=connection_successful+1;			
@@ -679,7 +679,7 @@ function npn_working(){
 			});
 		}else{
 				setTimeout(function(){ 
-				alert("wrong Connection"); 
+				alert("Wrong connection"); 
 				},500);
 		}
 			
@@ -710,7 +710,7 @@ function PNPConnetionStatusClick(){
 //	console.log("connection_successful if condition = "+connection_successful);
 //	console.log("connection Done");
 	setTimeout(function(){ 
-	alert("Now Click on Check Connection Status Button "); 
+	alert("Now click on check connection status button"); 
 	},1000);
 }else{
 //	setTimeout(function(){ 
@@ -726,7 +726,7 @@ function NPNConnetionStatusClick(){
 //	console.log("connection_successful if condition = "+connection_successful);
 //	console.log("connection Done");
 	setTimeout(function(){ 
-	alert("Now Click on Check Connection Status Button "); 
+	alert("Now click on check connection status button"); 
 	},1000);
 }else{
 //	setTimeout(function(){ 
