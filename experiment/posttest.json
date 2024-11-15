@@ -3,63 +3,63 @@
   "questions": [
     {
 	
-      "question": "_______ detects metals but along with it can also detect resins, liquids.",
+      "question": "Which of the following is an advantage of using an inductive proximity switch?",
       "answers": {
-        "a": "Inductive proximity",
-        "b": "Magnetic Proximity",
-        "c": "Capacitive Proximity",
-        "d": "Parallel Proximit"
+        "a": "Ability to sense non-metallic objects",
+        "b": "High accuracy",
+        "c": "Low cost",
+        "d": "Large sensing range"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
 	
     {
-      "question": "How are proximity sensors affected?",
+      "question": "Which of the following is a factor that affects the accuracy of a proximity switch?",
       "answers": {
-        "a": "Ambient Temperature",
-        "b": "Objects surrounded",
-        "c": "By Other Sensors",
-        "d": "All mentioned above"
+        "a": ". Switch size",
+        "b": "Power supply voltage",
+        "c": "Object speed",
+        "d": "Switch color"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },	
  
     {
-      "question": "What transistor is used for positive side switching?",
+      "question": "Which of the following principles of operation is used by a capacitive proximity switch?",
       "answers": {
-        "a": "PNP",
-        "b": "NPN",
-        "c": "UJT",
-        "d": "FET"
+        "a": "Magnetic fields",
+        "b": " Ultrasonic waves",
+        "c": "Infrared light",
+        "d": "Changes in capacitance"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
 	
 	{
-      "question": "Proximity sensors detect object using __________?",
+      "question": "Which of the following is an application for a capacitive proximity switch?",
       "answers": {
-        "a": "Light",
-        "b": "Electromagnetic(EM) field",
-        "c": "Sound",
-        "d": "All mentioned above"
+        "a": "Sensing the level of a liquid",
+        "b": "Sensing the presence of a metallic object",
+        "c": "Sensing the temperature of an object",
+        "d": "Sensing the pressure of a gas"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 	
 	
 	{
-      "question": "The monitoring of machines, gears and objects are achieved by which sensor?",
+      "question": "Which of the following is a disadvantage of using a capacitive proximity switch?",
       "answers": {
-        "a": "Humidity sensor",
-        "b": "Touch sensor",
-        "c": "Pressure sensor",
-        "d": "Proximity sensor"
+        "a": "Limited sensing range",
+        "b": "Susceptibility to interference from other objects",
+        "c": "Inability to sense non-metallic objects",
+        "d": "High cost"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
 	

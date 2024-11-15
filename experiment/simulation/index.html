@@ -88,7 +88,7 @@
         margin-right: 10px;
         margin-top:7px;
         float:right;
-        margin-bottom:10px;
+         margin-bottom:10px;
         padding: 7px; 
         border:none; 
         border-radius: 5px;
@@ -99,34 +99,36 @@
 <header>
 		<img class="Coeplogo" src='images/COEPlogo.png' />
 		<img class="VlabLogo" src='images/vlablogo.jpg' />
-		<span id="colgName">COEP Technological University,PUNE</span>		
+		<span id="colgName">COEP TECHNOLOGICAL UNIVERSITY PUNE</span>		
 		
 	</header>
 
-<br>	
+	
 <!--<div  class="row container-fluid" id="main-div1" style="margin-top:10px;" id="selectMethod">-->
 <div  class=" container-fluid" > 
 	<div class="row FirstRowtimer " id="selectMethod" >	
-		<div class="col-lg-2" >
+		<div class="col-lg-1" >
 		</div>
 		<div class="col-lg-2"  id="configType" >
-			<label class="selectConf2" >Connection Type : </label>		
+			<label class="selectConf2" style="margin-top:10px;" >Connection Type : </label>		
 		</div>
-		<div class="col-lg-5" id="configSelection"  >  
-	  		<select  class="form-control selectConf" id="configConnection" " style="height:auto;" disabled>
+		<div class="col-lg-3" id="configSelection"  >  
+	  		<select  class="form-control selectConf" id="configConnection" " style="height:auto; margin-top:7px;" disabled>
 	   		<option value="000">--- Select Connection --- </option>
 	   		<option id="PNPConnection" value="1" name="PNP">PNP Connection</option>
 	   		<option id="NPNConnection" value="2" name="NPN">NPN Connection</option>
 	  		</select>	         
 		</div>
-		<div class="col-sm-2">
-			<button type="button" class="btn btn-danger button1 btn1" id="procedure" data-toggle="modal" data-target="#readProcedureModal"><b>PROCEDURE</b></button>
-		</div>
-		
-		<button type="button" class="btn btn-danger btn1" id = "pdfDownload" hidden>Download Result </button>
+		<div class="col-sm-6">
+		<button type="button" class="btn btn-danger btn1"  style = "float:right;" id = "pdfDownload" hidden>Download Result </button>
+	
 		 <button type="button" class="btn btn-danger btn1" data-toggle="modal"  data-target="#readProcedureModal1" id = "simDemo" >Simulation Demo</button>
+		 <button type="button" class="btn btn-danger button1 btn1" id="procedure" data-toggle="modal" data-target="#readProcedureModal">Procedure</button>
+		 </div>
 	</div>
 </div>
+
+
 
 <div id="readProcedureModal" class="modal fade" role="dialog">
   <div class="modal-dialog  modal-lg">
@@ -184,7 +186,7 @@
 
   </div>
 </div>
-<br>
+
 
 
  <div id="readProcedureModal1" class="modal fade" role="dialog">
@@ -192,7 +194,7 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header1">
+      <div class="modal-header">
         <h3 class="modal-title12">DEMO</h3>
 <!--         <button type="button" class="close" data-dismiss="modal">&times;</button> -->
       </div>
@@ -269,7 +271,7 @@
 				</div>
 				 </div>
 	<footer>
-Copyrights &copy; COEP - Virtual Lab
+Copyrights &copy; COEPTECH - Virtual Labs
 </footer>
 </body>
 
