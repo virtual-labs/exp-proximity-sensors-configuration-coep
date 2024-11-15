@@ -1,12 +1,12 @@
 ### Theory
 
 Proximity sensors or switches are pilot devices that detect the presence of an object (usually called the target) without physical contact. They are solid-state electronic devices that are completely encapsulated to protect against excessive vibration, liquids, chemicals, and corrosive agents found in the industrial environment. Proximity sensors are used when:
-- The object being detected is too small, too lightweight, or too soft to operate a mechanical switch.
-- Rapid response and high switching rates are required, as in counting or ejection control applications.
-- An object has to be sensed through non-metallic barriers such as glass, plastic, and paper cartons.
-- Hostile environments demand improved sealing properties, preventing proper operation of mechanical switches.
-- Long life and reliable service are required.
-- A fast electronic control system requires a bounce-free input signal.
+- The object being detected is too small, too lightweight, or too soft to operate a mechanical switch
+- Rapid response and high switching rates are required, as in counting or ejection control applications
+- An object has to be sensed through non-metallic barriers such as glass, plastic, and paper cartons
+- Hostile environments demand improved sealing properties, preventing proper operation of mechanical switches
+- Long life and reliable service are required
+- A fast electronic control system requires a bounce-free input signal
 
 An inductive proximity sensor is a sensing device that is actuated by a metal object.
 

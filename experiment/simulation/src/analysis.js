@@ -5,7 +5,8 @@ function resultAnalysis(counterMasterJson){
 	    $("#pdfDownload").prop("hidden",false);
 //		console.log("ResultPage Analysis.......");
 			  	
-			$("#configType").prop('hidden',true);
+			$("#configType").prop('hidden',false);
+			 $('#configType').text('');
 			$("#configSelection").prop('hidden',true);
 			$("#procedure").prop('hidden',true);
 			$("#simDemo").prop('hidden',true);
@@ -87,7 +88,7 @@ var htm=''
 
 		+'<div class="col-md-12">'
 		+' <div class="panel remarkBground" >'
-		+' <div class="panel-body remark" ><center>Experiment completed successfully!!</center></div>'
+		+' <div class="panel-body remark" ><center>Proximity sensor experiment completed successfully!!</center></div>'
 		+'</div>'
 		+'</div>'
 		
@@ -108,7 +109,7 @@ var htm=''
 		   +' </thead>'
 		   +'  <tbody>'
 		   +'   <tr>'
-		   +'     <td class=""><center>Basic knowledge</center></td>'
+		   +'     <td class=""><center>Basic Knowledge</center></td>'
 		   if(quesPercent<60){
 			htm+= '     <td class=""><center class="NotAttained"> Not Attained</center></td>'   
 		   }else{
@@ -241,7 +242,7 @@ var htm=''
 		+'<div class="col-md-4">'
 		+' <div class="panel panel-danger headingPanel" >'
 		+' <div class="panel-body" id="panelbody">'
-		+'<center><span class="heading1"><b>Basic knowledge</b></span></center>'
+		+'<center><span class="heading1"><b>BASIC KNOWLEDGE</b></span></center>'
 		+'</div>'
 		+'</div>'		
 		+'<div class="col-md-6">'
@@ -288,7 +289,7 @@ var htm=''
 		
 		+'<div class="col-sm-4">'
 		+' <div class="panel panel-danger headingPanel" >'
-		+' <div class="panel-body" id="panelbody"><center><span class="heading1">NPN CONNECTION</span></center></div>'
+		+' <div class="panel-body" id="panelbody"><center><span class="heading1"><b>NPN CONNECTION</b></span></center></div>'
 		+'</div>'
 		+'<div class="col-sm-6">'
 		+' <div class="panel panel-danger " style="    margin-bottom: 28px;">'

@@ -2,64 +2,64 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What type of proximity sensors are preferred for Liquid level detection?",
+      "question": "Which of the following is a type of proximity switch?",
       "answers": {
-        "a": "Capacitive",
-        "b": "Inductive",
-        "c": "Magnetic",
-        "d": "Photoelectric"
+        "a": "A. Optical proximity switch",
+        "b": "Magnetic proximity switch",
+        "c": "Capacitive proximity switch",
+        "d": " All of the above"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
 
 	
     {
-      "question": "What kind of objects detected by Capacitive sensors?",
+      "question": "Which of the following is NOT a factor that affects the sensing range of a proximity switch?",
       "answers": {
-        "a": "Metallic",
-        "b": "Non-metallic",
-        "c": "Liquid",
-        "d": "All mentioned above"
+        "a": "A. Material of the object being sensed",
+        "b": "Ambient temperature",
+        "c": "Size of the switch housing",
+        "d": "Power supply voltage"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },	
  
     {
-      "question": "Capacitive type proximity sensors maximum sensing range is _____?",
+      "question": "What is the sensing range of a proximity switch?",
       "answers": {
-        "a": "10 mm",
-        "b": "25 mm",
-        "c": "100 mm",
-        "d": "120 mm"
+        "a": "The distance from the switch to the object being sensed",
+        "b": " The size of the object being sensed",
+        "c": "The type of material the object being sensed is made of",
+        "d": " The temperature of the object being sensed"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
   
 	
 	{
-      "question": "What is the condition to detect target in dielectric capacitive sensor?",
+      "question": "Which of the following is an application for a capacitive proximity switch?",
       "answers": {
-        "a": "Dielectric constant = Air",
-        "b": "Dielectric constant",
-        "c": "Dielectric constant > Air",
-        "d": "Dielectric constant ≥ Air"
+        "a": ". Sensing metal objects",
+        "b": "Sensing non-metallic objects",
+        "c": "Sensing objects in a high-temperature environment",
+        "d": " Sensing objects in a low-temperature environment"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
 	
 	{
-      "question": "Which protocol is used by proximity sensor?",
+      "question": "Which of the following is a disadvantage of using a capacitive proximity switch?",
       "answers": {
-        "a": "I2C",
-        "b": "SPI",
-        "c": "UART/USART",
-        "d": "CAN"
+        "a": "Limited sensing range",
+        "b": "Susceptibility to interference from other objects",
+        "c": "High cost",
+        "d": "Only able to sense metallic objects"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
 	
