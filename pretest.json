@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following is a type of proximity switch?",
+      "answers": {
+        "a": "A. Optical proximity switch",
+        "b": "Magnetic proximity switch",
+        "c": "Capacitive proximity switch",
+        "d": " All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+	
+    {
+      "question": "Which of the following is NOT a factor that affects the sensing range of a proximity switch?",
+      "answers": {
+        "a": "A. Material of the object being sensed",
+        "b": "Ambient temperature",
+        "c": "Size of the switch housing",
+        "d": "Power supply voltage"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "What is the sensing range of a proximity switch?",
+      "answers": {
+        "a": "The distance from the switch to the object being sensed",
+        "b": " The size of the object being sensed",
+        "c": "The type of material the object being sensed is made of",
+        "d": " The temperature of the object being sensed"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+  
+	
+	{
+      "question": "Which of the following is an application for a capacitive proximity switch?",
+      "answers": {
+        "a": ". Sensing metal objects",
+        "b": "Sensing non-metallic objects",
+        "c": "Sensing objects in a high-temperature environment",
+        "d": " Sensing objects in a low-temperature environment"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Which of the following is a disadvantage of using a capacitive proximity switch?",
+      "answers": {
+        "a": "Limited sensing range",
+        "b": "Susceptibility to interference from other objects",
+        "c": "High cost",
+        "d": "Only able to sense metallic objects"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+	
+ 
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+	
+      "question": "Which of the following is an advantage of using an inductive proximity switch?",
+      "answers": {
+        "a": "Ability to sense non-metallic objects",
+        "b": "High accuracy",
+        "c": "Low cost",
+        "d": "Large sensing range"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+    {
+      "question": "Which of the following is a factor that affects the accuracy of a proximity switch?",
+      "answers": {
+        "a": ". Switch size",
+        "b": "Power supply voltage",
+        "c": "Object speed",
+        "d": "Switch color"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },	
+ 
+    {
+      "question": "Which of the following principles of operation is used by a capacitive proximity switch?",
+      "answers": {
+        "a": "Magnetic fields",
+        "b": " Ultrasonic waves",
+        "c": "Infrared light",
+        "d": "Changes in capacitance"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Which of the following is an application for a capacitive proximity switch?",
+      "answers": {
+        "a": "Sensing the level of a liquid",
+        "b": "Sensing the presence of a metallic object",
+        "c": "Sensing the temperature of an object",
+        "d": "Sensing the pressure of a gas"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	
+	{
+      "question": "Which of the following is a disadvantage of using a capacitive proximity switch?",
+      "answers": {
+        "a": "Limited sensing range",
+        "b": "Susceptibility to interference from other objects",
+        "c": "Inability to sense non-metallic objects",
+        "d": "High cost"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+	
+ 
+  ]
+}
+

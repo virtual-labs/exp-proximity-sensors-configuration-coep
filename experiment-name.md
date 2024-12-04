@@ -1,0 +1,1 @@
+## Configuration of proximity sensors and its application
